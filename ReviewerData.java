@@ -6,16 +6,23 @@ import java.util.*;
 // writer like ReviewerFormatWriter
 class ReviewerData {
 	// unique id
-	byte[] id;
+	char[] id;
 
 	// personal info
 	String email;
 	String fullName;
+	// TODO: encrypt with sha256 or another hashing algorithm
+	// for security reasons. DO NOT USE as plain text, this is a PROTOTYPE
+	String password;
 
-	// organization affiliated with the reviewer
+	// intials of the organization affiliated with the reviewer
 	String institution;
 
 	// location initials
 	String country;
 	String city;
+
+	public ReviewerData() {
+		id = new char[8];
+	}
 }

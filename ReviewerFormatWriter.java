@@ -1,7 +1,6 @@
 import java.io.*;
 import java.util.*;
 
-// TODO: take parameters for formatted writting
 // ReviewerFormatWriter contains utility functios for creating and writing
 // to the given file with the Revisores.txt format
 class ReviewerFormatWriter {
@@ -21,7 +20,7 @@ class ReviewerFormatWriter {
 	// exception safe file closing
 	public void closeFile() {
 		try {
-		out.close();
+			out.close();
 		} catch (IOException e) {
 			e.printStackTrace();
 			System.exit(-1);
@@ -29,9 +28,13 @@ class ReviewerFormatWriter {
 	}
 
 	// truncate file contents and write the formated data given
-	public void writeFormattedReviewerList(String arg) {
+	// TODO: this is just a method stub. finish writing the formatted
+	// output to the file
+	public void writeFormattedReviewerList(ReviewerData[] reviewers) {
 		try {
-			out.write(arg);
+			for (ReviewerData rev : reviewers) {
+				out.write("stub!");
+			}
 		} catch (IOException e) {
 			e.printStackTrace();
 			System.exit(-1);
