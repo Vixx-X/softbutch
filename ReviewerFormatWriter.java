@@ -28,8 +28,8 @@ class ReviewerFormatWriter {
 		}
 	}
 
-	// truncate file contents and write arg instead
-	public void write(String arg) {
+	// truncate file contents and write the formated data given
+	public void writeFormattedReviewerList(String arg) {
 		try {
 			out.write(arg);
 		} catch (IOException e) {
