@@ -6,7 +6,7 @@ import java.util.*;
 // writer like ReviewerFormatWriter
 class ReviewerData {
 	// unique id
-	char[] id;
+	String id;
 
 	// personal info
 	String email;
@@ -22,7 +22,6 @@ class ReviewerData {
 	String country;
 	String city;
 
-	public ReviewerData() {
-		id = new char[8];
-	}
+	// 3 char code of the chosen field
+	String field;
 }

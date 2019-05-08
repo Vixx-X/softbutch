@@ -5,8 +5,11 @@ import java.util.*;
 // it must only contain the main function
 class ReviewerGen {
 	public static void main(String[] args) {
-		ReviewerFormatWriter revwriter =
+/*		ReviewerFormatWriter revwriter =
 			new ReviewerFormatWriter("Revisores.txt");
 		revwriter.closeFile();
+		*/
+		UserInputHandler handler = new UserInputHandler();
+		handler.readDataCLI();
 	}
 }
