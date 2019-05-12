@@ -1,5 +1,4 @@
 import java.io.*;
-import java.util.*;
 
 // ReviewerFormatWriter contains utility functios for creating and writing
 // to the given file with the Revisores.txt format
@@ -30,7 +29,7 @@ class ReviewerFormatWriter {
 	// truncate file contents and write the formated data given
 	// TODO: this is just a method stub. finish writing the formatted
 	// output to the file
-	public void writeFormattedReviewerList(ReviewerData[] reviewers) {
+	public void writeList(ReviewerData[] reviewers) {
 		try {
 			for (ReviewerData rev : reviewers) {
 				out.write("stub!");
