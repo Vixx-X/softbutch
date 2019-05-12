@@ -10,10 +10,9 @@ class ReviewerGen {
 
 		UserInputHandler handler = new UserInputHandler();
 		revwriter.writeList(handler.readDataCLI());
-		revwriter.closeFile();
 	}
 
-	// Wan't me to use Java? Suffer the consecuences
+	// Wan't me to use Java? Suffer the consequences
 	private static void joderExistencia() {
 		System.out.printf("\007");
 	}

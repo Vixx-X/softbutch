@@ -6,7 +6,7 @@ class UserInputHandler {
 		List<ReviewerData> reviewers = new ArrayList<ReviewerData>();
 		ReviewerData r = new ReviewerData();
 
-		if (promptCreateReviewer()) {
+		while (promptCreateReviewer()) {
 			r.id = promptRead("Reviewer id (8 alphanum chars)");
 			r.password = promptRead("User password (6 chars)");
 			r.email = promptRead("Email account (user@example.com)");
@@ -16,6 +16,8 @@ class UserInputHandler {
 			r.country = promptRead("Country (uppercase initials)");
 			r.field = promptRead("Chosen field (IS[1-9] Example: IS3)");
 		}
+
+		reviewers.add(r);
 
 		ReviewerData[] revArr = new ReviewerData[reviewers.size()];
 		reviewers.toArray(revArr);
